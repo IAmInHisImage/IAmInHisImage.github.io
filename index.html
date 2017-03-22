@@ -1,172 +1,93 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In His Image - Home</title>
-    <meta name="description" content="I Am In His Image: Changing the face of education">
-    <meta name="keywords" content="In His Image, I am in his image, Belton, SC, Trinty Christian Educational School, changing the face, Christian Services">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/app.js"></script>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-  </head>
-  <body>
-<!--Facebook Stuff-->
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
+.bgimg {
+    background-image: url('water-blue-ocean.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>IN HIS IMAGE</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p>Changing the Face of Education</p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 25, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
     
-      
-<div class="expanded row">
-    <div class="large-12 small-12 column" style="background-color:dodgerblue; height: 3px;"></div>
-</div>
-<!--Navigation Bar-->
-<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
-<div class="top-bar" id="main-menu">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">IN HIS IMAGE</li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li class="has-submenu">
-        <a href="Services.html">SERVICES</a>
-        <ul class="submenu menu vertical" data-submenu>
-          <li><a href="Creativesunsets.html">Creativsunsetss</a></li>
-          <li><a href="Encouraging Words.html">Encouraging Words</a></li>
-          <li><a href="Layaside.html">Layaside</a></li>
-          <li><a href="King's Kids.html">King's Kids</a></li>
-          <li><a href="Kingdom Communication.html">Kingdom Communication</a></li>
-          <li><a href="TCES.html">TCES</a></li>
-        </ul>
-      </li>
-      <li><a href="Contact.html">CONTACT</a></li>
-    </ul>
-  </div>
-</div>
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
 
-<!--Header-->
-<section class="hero">
-  <div class="row intro">
-    <div class="small-centered medium-centered large-centered columns">
-      <h1 style="text-align:center;">IN HIS IMAGE</h1>
-      <p style="text-align:center;">"CHANGING THE FACE OF EDUCATION"
-    <br><br><a class="button" href="about.html">LEARN MORE</a>
-    </p>
-
-    </div>
-    <div class="small-centered medium-uncentered medium-6 large-5 columns">
-      <div class="tech-img"></div>
-      </div>
-  </div>
-</section><br>
-      <h4><b>IN HIS IMAGE EXIST TO GO, BUILD, AND TEACH INDIVIDUALS, FAMILIES, AND COMMUNITIES.</b></h4>
-<br><br>
-<!--Slideshow-->
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="pics/go.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="pics/build.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="pics/teach.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<!--Business pictures-->
-<div class="row small-up-1 large-up-3">
-    <div class="column column block">
-        <img src="pics/cs.png" style="display: block; margin: 0 auto" class="thumbnail-no-border" alt="Creativesunsets">
-    </div>
-        <div class="column column block">
-        <img src="pics/ew.png" style="display: block; margin: 0 auto;" class="thumbnail-no-border" alt="Encouraging Words">
-    </div>
-    <div class="column column block">
-        <img src="pics/layaside.png" style="display: block; margin: 0 auto;" alt="Layaside">
-    </div>
-        <div class="column column block">
-        <img src="pics/KC.jpg" style="display: block; margin: 0 auto;" alt="Kingdom Communication">
-    </div>
-        <div class="column column block">
-        <img src="pics/kk.png" style="display: block; margin: 0 auto;" alt="Kings Kids">
-    </div>
-        <div class="column column block">
-        <img src="pics/trinity.jpg" style="display: block; margin: 0 auto;" alt="TCES">
-    </div>
-</div>
- <br>     
-<!--Announcements--> 
-      <h2 style="text-align:center;font-size:30px"><b>In His Image Announcements</b></h2>
-<div class="row small-up-1 large-up-2">
-  <div class="small-9 columns small-centered">
-    <article class="event">
-
-        <div class="event-date">
-          <p class="event-month">April</p>
-          <p class="event-day">17</p>
-        </div>
-
-        <div class="event-desc">
-          <h4 class="event-desc-header">TCES Awards/Uprsing Service</h4>
-          <p class="event-desc-detail"><span class="event-desc-time"></span>Welfare Baptist Church</p>
-          <a href="Event1.html" class="rsvp button">RSVP &amp; Details</a>
-        </div>
-
-      </article>
-
-      <hr>
-
-      <article class="event">
-
-        <div class="event-date">
-          <p class="event-month">May</p>
-          <p class="event-day">13</p>
-        </div>
-
-        <div class="event-desc">
-          <h4 class="event-desc-header">Mr. and Miss Trinity Tiger</h4>
-          <p class="event-desc-detail"><span class="event-desc-time"></span>Welfare Baptist Church</p>
-          <a href="Event2.html" class="rsvp button">RSVP &amp; Details</a>
-        </div>
-
-      </article>
-  </div>
-    <div class="colum column block">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FIAmImHisImage%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-    </div>
-</div>
-<br><br><br>
-<!--Footer-->
-<footer>
-<p>In His Image<br> 2106 Bolt Dr.<br>Belton,SC 29627<br> (864)381-5248</p>
-</footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+</body>
 </html>

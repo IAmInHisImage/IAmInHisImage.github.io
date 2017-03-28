@@ -1,0 +1,231 @@
+/*Footer*/
+footer {
+    text-align: center;
+    background: url('../pics/water-blue-ocean.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+}
+h1, p, a, h4, h3, h2, h5, li {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+/*Navigation Bar*/
+.title-bar {
+  background: #333;
+  padding: 0.9rem;
+  font-size: 20px;
+}
+
+.top-bar {
+  background: #333;
+  padding: 0px;
+}
+  .top-bar ul {
+    background: #333;
+    padding: 0;
+}
+    .top-bar ul li {
+      font-size: 20px;
+      background: #333;
+      padding-bottom: px;
+}
+      .top-bar ul li a {
+        font-size: 20px;
+        color: #fff;
+        transition: all 0.5s ease;}
+.top-bar ul li a:hover {
+    background-color: dodgerblue;
+}
+.menu-text {
+  color: #fff; }
+  @media only screen and (max-width: 40em) {
+    .menu-text {
+      display: none !important; } }
+
+@media only screen and (min-width: 40em) {
+  .menu:last-child {
+    border-left: 1px solid #4e4e4e; }
+
+  .menu:first-child {
+    border-left: none; }
+
+  .menu li:not(:last-child) {
+    border-right: 1px solid #4e4e4e; } }
+.dropdown.menu .submenu {
+  border: none; }
+
+.dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+  border-color: #fff transparent transparent; }
+
+.is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fff; }
+
+.js-drilldown-back::before {
+  border-color: transparent #fff transparent transparent; }
+
+/*Header*/
+.hero {
+  background: url('../pics/water-blue-ocean.jpg') no-repeat center center;
+  background-size: cover;
+  height: 50vh; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8; }
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .hero h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; }
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .hero .tech-img {
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+        text-align: right; } 
+}}
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
+h4 {
+    text-align: center;
+}
+
+.button {
+  color: transparent;
+  font-size: .rem;
+  letter-spacing: 5px;
+  border: 4px solid transparent;
+  border-image: linear-gradient(45deg, pink, skyblue);
+  border-image-slice: 1;
+  background: linear-gradient(45deg, pink, skyblue);
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  transition: all 0.2s ease;
+}
+  .button:hover {
+    border-image: linear-gradient(45deg, #2ecc71, dodgerblue);
+    background: linear-gradient(45deg, #2ecc71, dodgerblue); 
+}
+
+
+/*Style for History.html*/
+.more .row  .column {
+    text-align: center;
+    padding: 0px;
+}
+.more .row .column ul {
+    list-style-type: none;
+}
+.more .row .column li {
+    display: inline;
+    margin: 50px
+}
+.more .row .column a {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    transition: all .5s ease;
+}
+.more .row .column a:hover {
+    background-color: dodgerblue;
+    transition: all .5s ease;
+}
+.more .row .column a:active {color:dodgerblue;}
+      
+/*Pictures*/
+.images img {
+    margin: 10px auto;
+    display: block;
+}
+
+
+/*Responsive*/
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+    .more .row .column li {
+        display: block;
+    }
+}
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .more .row .column li {
+        margin: 10px auto;
+    }
+}
+
+
+/* Style for Objective.html */
+#goal {
+    text-shadow: 1px 1px dodgerblue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.obj .row .column li {
+    padding: 10px;
+    font-size: 19px
+}
+/*Responsive*/
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+    .obj .row .column li {
+        font-size: 16px;
+    }
+}
+
+
+/*Style for Philosophy*/
+.phil .row .column p {
+    text-indent: 50px;
+    font-size: 20px;
+}
+/*Responsive*/
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { 
+    .phil .row .column p {
+        font-size: 16px;
+    }
+}
+
+/* Style for Beverly White*/
+.br .block, video {
+    margin: 10px auto;
+}
+.br img {display: block; margin: 0 auto; height: 300px;}
+#mw {width: 300px;}
+.br p {text-indent: 50px;}

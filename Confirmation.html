@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation page</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <style>
+        /*Footer*/
+        footer {
+            text-align: center;
+            background: url('pics/water-blue-ocean.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 10px;
+            bottom: 0%;
+        }
+        h1, p, a, h4, h3, h2 {
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+        /*Social Media icons*/
+        i {
+          font-size: 2.5rem; }
+
+        .icon-button {
+          border-radius: 3.6rem;
+          width: 3.6rem;
+          height: 3.6rem;
+          margin: 0 5px;
+          position: relative;
+          display: inline-block;
+          text-align: center;
+          font-size: 2rem;
+          background: white; }
+          .icon-button span {
+            display: block;
+            border-radius: 0;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: all 0.3s; }
+          .icon-button:hover span {
+            display: block;
+            border-radius: 3.6rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            margin: -1.8rem; }
+          .icon-button i {
+            background: none;
+            height: 3.6rem;
+            width: 3.6rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            line-height: 3.6rem;
+            transition: all 0.3s; }
+
+        .youtube span {
+          background-color: red; }
+
+        .facebook span {
+          background-color: #3B5998; }
+
+        .gplus span {
+          background-color: #db5a3c; }
+
+        .icon-button .fi-social-youtube {
+          color: red; }
+
+        .icon-button .fi-social-facebook {
+          color: #3b5998; }
+
+        .icon-button .fi-social-google-plus {
+          color: #db5a3c; }
+
+        .icon-button:hover .fi-social-youtube, .icon-button:hover .fi-social-facebook, .icon-button:hover .fi-social-google-plus {
+          color: white;
+          font-size: 2.6rem;
+          line-height: 3.9rem; }
+        .block {text-align: center; margin: 0 auto; display: block;}
+        h1 {margin-top: 100px;}
+    </style>
+  </head>
+  <body>
+<div class="row small-up-1 large-up-2">
+    <div class="column column block">
+        <h1>Thank You!</h1>
+        <p><b>Your message has been recieved. We will get back with you shortlty<br>In the meantime, check out our social media pages:</b></p>
+        <!--social Media-->
+        <div class="sm">
+            <a href="https://www.youtube.com/channel/UC8vmHzJXPmhRc938cHoumEg" class="icon-button youtube">
+            <i class="fi-social-youtube"></i><span></span>
+            </a>
+            <a href="https://www.facebook.com/IAmImHisImage/" class="icon-button facebook">
+              <i class="fi-social-facebook"></i><span></span>
+            </a>
+            <a href="https://plus.google.com/u/0/104349853609979147193" class="icon-button gplus">
+              <i class="fi-social-google-plus"></i><span></span>
+            </a>
+        </div>
+        <a href="index.html">back to I am In His Image home</a>
+    </div>
+    <div class="column column block"><img src="pics/porcelain.jpg"></div>
+</div>
+
+<!--Footer-->
+<footer>
+<p>In His Image<br>PO Box 413<br>2106 Bolt Dr.<br>Belton,SC 29627<br> (864)381-5248</p>
+</footer>   
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

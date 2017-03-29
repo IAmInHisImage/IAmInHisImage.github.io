@@ -14,7 +14,7 @@ video#bgvid {
     background: url(../pics/empty student desk.jpg) no-repeat;
     background-size: cover; 
 }
-video { display: block; }
+iframe { display: block; }
 
 .middle {
     position: absolute;

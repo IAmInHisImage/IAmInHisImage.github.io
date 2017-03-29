@@ -223,7 +223,7 @@ h4 {
 }
 
 /* Style for Beverly White*/
-.br .block, video {
+.br .block, iframe {
     margin: 10px auto;
 }
 .br img {display: block; margin: 0 auto; height: 300px;}

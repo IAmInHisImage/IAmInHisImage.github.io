@@ -1,15 +1,13 @@
-$(document).foundation();
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
+$(document).foundation()
+$('#primary-menu').on(
+    'show.zf.dropdownmenu', function() {
+      var dropdown = $(this).find('.is-dropdown-submenu');
+      dropdown.css('display', 'none');
+      dropdown.fadeIn('slow');
+  });
+  $('#primary-menu').on(
+    'hide.zf.dropdownmenu', function() {
+      var dropdown = $(this).find('.is-dropdown-submenu');
+      dropdown.css('display', 'inherit');
+      dropdown.fadeOut('slow');
+  });

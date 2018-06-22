@@ -73,33 +73,30 @@
       <h4><b>IN HIS IMAGE EXIST TO GO, BUILD, AND TEACH INDIVIDUALS, FAMILIES, AND COMMUNITIES.</b></h4>
 <br><br>
 <!--Slideshow-->
-<!--Slideshow-->
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="pics/go.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="pics/build.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="pics/teach.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+      <div class="slideshow-container">
+          <div class="orbit" role="region" aria-label="home" data-orbit>
+                <ul class="orbit-container">
+                    <li class="orbit-slide is-active">
+                        <img class="orbit-image" src="pics/go.jpg" alt="GO!">
+                    </li>
+                    <li class="orbit-slide">
+                        <img class="orbit-image" src="pics/build.jpg" alt="BUILD">
+                    </li>
+                    <li class="orbit-slide">
+                        <img class="orbit-image" src="pics/teach.jpg" alt="TEACH">
+                    </li>
+                </ul>
+                    <!--Next/Prev Buttons-->
+                <button class="orbit-previous"><span class="show-for-sr">Prevous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                    <!--Bullets-->
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                </nav>
+            </div>
+      </div>
 
 <!--Business pictures-->
 <div class="row small-up-1 large-up-3">

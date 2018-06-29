@@ -91,7 +91,9 @@ footer {
     text-align: center;
 }
 
-
+.row .bottom {
+    background-color: #fff;
+}
 
 thead {
   background-color: #fff;

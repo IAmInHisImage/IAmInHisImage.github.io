@@ -1,5 +1,17 @@
 h1, p, a, h4, h3, h2, h5, input, form {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;}
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  }
+
+#pay, #cashApp, #zelle {
+      display: block;
+      margin: 10px auto;
+      width: 250px;
+  }
+
+  #threeWays {
+    text-align: center;
+  }
+
 /*Navigation Bar*/
 .title-bar {
   background: #333;
@@ -195,10 +207,6 @@ img {
     margin: 10px auto;
 }
 
-#pay {
-    display: block;
-    margin: 10px auto;
-}
 /*Small screens*/
 @media only screen { } /* Define mobile styles */
 

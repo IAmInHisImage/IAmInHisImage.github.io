@@ -69,7 +69,7 @@ h1,h2,h3,h4,ul,li,a {
     background-size: cover;
     position: relative;
     padding-top: 2.5rem;
-    color: ;
+    
 }
 #navigation {
     float: none;
@@ -112,7 +112,7 @@ h1,h2,h3,h4,ul,li,a {
       background: dodgerblue;
       padding-bottom: px;
 }
-// Small screens
+/*Small screens
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
@@ -167,5 +167,5 @@ iframe {
      background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px auto;
-    height: 80vh;
+    height: 90vh;
 }
